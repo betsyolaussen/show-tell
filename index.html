@@ -7,8 +7,12 @@
     </head>
 
     <body>
-        <h1>The Beginning of Kodak Cameras collection!</h1>
+        <div class="legend">
+            <p >One of my favorite cameras that I collect!</p>
+        </div>
+
         <div id="myCollection" v-cloak>
+            <h1>The Beginning of Kodak Cameras collection!</h1>
             <table class="table">
                 <thead class="header">
                     <th class="tableHeader">Name</th>
@@ -18,7 +22,8 @@
                     <th class="tableHeader">Description</th>
                 </thead>
                 <tbody>
-                    <tr v-for="(cameras, index) in cameras" :key="cameras.name">
+                    <tr v-for="(cameras, index) in cameras" :key="cameras.name"
+                    v-bind:class="{special:index===2}">
                         <td>{{cameras.name}}</td>
                         <td>{{cameras.manufacturer}}</td>
                         <td>{{cameras.yearMade}}</td>

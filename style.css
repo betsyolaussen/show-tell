@@ -1,26 +1,60 @@
 body {
     display: block;
+    
+}
+
+#myCollection {
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    
 }
 .table {
     width: 100%;
+    
 }
 
 h1 {
+    color: #464655;
     text-align: center;
     padding-bottom: 2em;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 th {
+    color: #CE796B;
+    font-family: Arial, Helvetica, sans-serif;
     width: 20%;
     text-align: left;
-    border: 2px solid navy;
-    padding: 1.2em;
+    border-bottom: 4px solid #464655;
+    padding: .5em 1em;
+    font-size: 1.2em;
 }
 
 td {
-    padding: 1.2em;
-    border: 2px solid navy;
+    padding: 1em;
+    border-bottom: 4px solid #464655;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    
+}
+
+.special, .legend{
+    background-color: #94958B;
+    color: white;
+}
+
+.legend {
+    position: relative;
+    width: 20%;
+    top: 10em;
+    padding: .5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.regular {
+    background-color: #EAE0CC;
 }
 
 
