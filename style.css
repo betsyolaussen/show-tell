@@ -2,21 +2,25 @@ body {
     display: block;
 }
 .table {
-    width: 75%;
-    text-align: center;
+    width: 100%;
 }
 
 h1 {
     text-align: center;
+    padding-bottom: 2em;
+
 }
 
 th {
     width: 20%;
     text-align: left;
-
+    border: 2px solid navy;
+    padding: 1.2em;
 }
 
-.header {
-    text-align: center;
+td {
+    padding: 1.2em;
+    border: 2px solid navy;
 }
+
 
