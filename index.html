@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="vue.js"></script>
+    </head>
+
+    <body>
+        <h1>The Beginning of Kodak Cameras collection!</h1>
+        <div id="myCollection" v-cloak>
+            <table class="table">
+                <thead class="header">
+                    <th class="tableHeader">Name</th>
+                    <th class="tableHeader">Manufacturer</th>
+                    <th class="tableHeader">Year Made</th>
+                    <th class="tableHeader">Location Made</th>
+                    <th class="tableHeader">Description</th>
+                </thead>
+                <tbody>
+                    <tr v-for="(cameras, index) in cameras" :key="cameras.name">
+                        <td>{{cameras.name}}</td>
+                        <td>{{cameras.manufacturer}}</td>
+                        <td>{{cameras.yearMade}}</td>
+                        <td>{{cameras.locationMade}}</td>
+                        <td>{{cameras.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

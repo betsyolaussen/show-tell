@@ -1,5 +1,5 @@
-new Vue ({
-    el: "#app",
+var camera = new Vue ({
+    el: "#myCollection",
     data: {
         cameras: [
             {
@@ -26,7 +26,7 @@ new Vue ({
             {
                 name: "Retina Series 35mm Camera",
                 manufacturer: "Kodak",
-                yearMade: [1934-1956],
+                yearMade: "1934 to 1956",
                 locationMade: "Stuttgart-Wangen, Germany",
                 description: "Revolutionary in the type of film it accepted, did not need a dark room or light tight bag."
             },
@@ -38,5 +38,6 @@ new Vue ({
                 description: "Inexpensive, easy to load point and shoot camera."
             }
         ]
+        
     }
 });
