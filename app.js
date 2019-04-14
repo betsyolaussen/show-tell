@@ -57,5 +57,15 @@ var camera = new Vue ({
                 }
             })
         },
+        addNewCamera: function () {
+            let newCamera = {
+                name: this.nameInput,
+                manufacturer: this.manufacturerInput,
+                yearMade: this.yearMadeInput,
+                locationMade: this.locationMadeInput,
+                description: this.descriptionInput,
+                id: this.idInput
+            }
+        },
     }
 });
