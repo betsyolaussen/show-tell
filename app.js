@@ -47,10 +47,10 @@ var camera = new Vue ({
     },
 
     methods: {
-        deleteCamera: function(camerasObject) {
+        deleteCamera: function(cameraObject) {
             this.cameras = this.cameras.filter
-            (function (camera) {
-                if (camera.name !== camerasObject.name) {
+            (function (cameras) {
+                if (cameras.id !== cameraObject.id) {
                     return true;
                 } else {
                     return false;
