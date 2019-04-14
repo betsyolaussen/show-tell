@@ -20,6 +20,7 @@
                     <th class="tableHeader">Year Made</th>
                     <th class="tableHeader">Location Made</th>
                     <th class="tableHeader">Description</th>
+                    <th class="tableHeader">Action</th>
                 </thead>
                 <tbody>
                     <tr v-for="(cameras, index) in cameras" :key="cameras.name"
@@ -29,6 +30,7 @@
                         <td>{{cameras.yearMade}}</td>
                         <td>{{cameras.locationMade}}</td>
                         <td>{{cameras.description}}</td>
+                        <td><button type="button" v-on:click="deleteCamera">Delete</button></td> 
                     </tr>
                 </tbody>
             </table>
