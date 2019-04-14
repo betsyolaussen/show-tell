@@ -3,15 +3,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="vue.js"></script>
+        
     </head>
 
     <body>
-        <div class="legend">
-            <p >One of my favorite cameras that I collect!</p>
-        </div>
-
-        <div id="myCollection" v-cloak>
+       
+         <div id="myCollection" v-cloak>
             <h1>The Beginning of Kodak Cameras collection!</h1>
             <table class="table">
                 <thead class="header">
@@ -36,6 +33,35 @@
             </table>
         </div>
 
+        <div class="legend">
+            <p >One of my favorite cameras that I collect!</p>
+        </div>
+
+        <form v-on:submit.prevent="addNewCamera">
+            <fieldset>
+                <legend>Add your favorite camera!</legend>
+                <div class="form">
+                    <label>Name: <input type="text" v-model="nameInput"></label>
+                </div>
+                <div class="form">
+                    <label>Manufacturer: <input type="text" v-model="manufacturerInput"></label>
+                </div>
+                <div class="form">
+                    <label>Year Made: <input type="text" v-model="yearMadeInput"></label>
+                </div>
+                <div class="form">
+                    <label>Location Made: <input type="text" v-model="locationMadeInput"></label>
+                </div>
+                <div class="form">
+                    <label>Description: <input type="text" v-model="descriptionInput"></label>
+                </div>
+                <div class="form">
+                    <label>Id: <input type="text" v-model="idInput"></label>
+                </div>
+            </fieldset>
+        </form>
+
+        <script src="vue.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
