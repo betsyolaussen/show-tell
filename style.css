@@ -5,7 +5,6 @@ body {
 
 #myCollection {
     width: 50%;
-    margin-left: 25%;
     position: absolute;
     
 }
@@ -17,9 +16,9 @@ body {
 h1 {
     color: #464655;
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     font-family: Arial, Helvetica, sans-serif;
-
+    text-decoration: underline;
 }
 
 th {
@@ -40,6 +39,18 @@ td {
     
 }
 
+button {
+    background-color: #7E846B;
+    color: white;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+}
+
+button:hover {
+    background-color: #2F2504;
+}
+
 .special, .legend{
     border: 4px solid #94958B;
     color: #CE796B;
@@ -50,9 +61,10 @@ td {
 
 .legend {
     position: relative;
+    float: right;
     width: 10%;
-    top: 10em;
-    left: 5em;
+    margin-right: 3em;
+    margin-top: 3em;
     padding: .5em;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -73,10 +85,9 @@ legend {
 }
 
 form {
-    width: 23%;
-    float: left;
-    margin-top: 15em;
-    
+    width: 50%;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .form {

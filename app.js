@@ -74,7 +74,7 @@ var camera = new Vue ({
                 id: this.idInput
             }
             this.cameras.push(newCamera);
-            this.nameInput = this.manufacturerInput = this.yearMadeInput = this.locationMadeInput = this.descriptionInput = this.idInput = "";
+            //this.nameInput = this.manufacturerInput = this.yearMadeInput = this.locationMadeInput = this.descriptionInput = this.idInput = "";
         },
         validation: function () {
             if (this.nameInput ==="" ||

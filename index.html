@@ -3,7 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        
+        <title>Show and Tell</title>
     </head>
 
     <body>
@@ -31,11 +31,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-        <div class="legend">
-            <p >One of my favorite cameras that I collect!</p>
-        </div>
+        
 
         <form v-on:submit.prevent="addNewCamera">
             <fieldset>
@@ -61,6 +57,14 @@
                 <button type="submit" id="add">Add camera</button>
             </fieldset>
         </form>
+    
+    </div>
+
+    <div class="legend">
+        <p >One of my favorite cameras that I collect!</p>
+    </div>
+
+
 
         <script src="vue.js"></script>
         <script src="app.js"></script>
