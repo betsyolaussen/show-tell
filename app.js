@@ -7,7 +7,7 @@ var camera = new Vue ({
         locationMadeInput: "",
         descriptionInput: "",
         idInput: "",
-        
+
         cameras: [
             {
                 name: "Original Kodak Camera",
@@ -73,6 +73,20 @@ var camera = new Vue ({
                 description: this.descriptionInput,
                 id: this.idInput
             }
+            this.cameras.push(newCamera);
+            this.nameInput = this.manufacturerInput = this.yearMadeInput = this.locationMadeInput = this.descriptionInput = this.idInput = "";
         },
+        validation: function () {
+            if (this.nameInput ==="" ||
+                this.manufacturerInput ==="" ||
+                this.yearMadeInput ==="" ||
+                this.locationMadeInput ==="" ||
+                this.descriptionInput ==="" ||
+                this.idInput ==="") {
+                    alert("Please fill out entire form");
+                    return false;
+                }
+                    return true;
+        }
     }
 });
