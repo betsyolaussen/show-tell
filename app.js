@@ -1,6 +1,13 @@
 var camera = new Vue ({
     el: "#myCollection",
     data: {
+        nameInput: "",
+        manufacturerInput: "",
+        yearMadeInput: "",
+        locationMadeInput: "",
+        descriptionInput: "",
+        idInput: "",
+        
         cameras: [
             {
                 name: "Original Kodak Camera",
